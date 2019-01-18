@@ -1,0 +1,52 @@
+<div class="card" *ngFor="let block of blocks">
+  <div class="card-header">Block-#: {{ block.blockNumber }}</div>
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="row">Block-Hash</th>
+          <td>{{ block.blockHash }}</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Previous-Hash</th>
+          <td>{{ block.previousHash }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Data-Hash</th>
+          <td>{{ block.dataHash }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Tramsaction-Count</th>
+          <td>{{ block.trnxnCount }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <mat-accordion *ngFor="let trnxn of block.trnxns">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>{{
+          trnxn.payload.header.channel_header.timestamp
+        }}</mat-expansion-panel-header>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="row">Transanction-ID</th>
+              <td>{{ trnxn.payload.header.channel_header.tx_id }}</td>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <th scope="row">Channel-ID</th>
+                <td>{{ trnxn.payload.header.channel_header.channel_id }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Signature</th>
+                <td>{{ trnxn.payload.header.signature_header.creator.Mspid }}</td>
+              </tr>
+            </tbody>
+        </table>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>

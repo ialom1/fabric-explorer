@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  max-width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.container {
+  display: block;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.section {
+  margin-top: 1rem;
+}
+

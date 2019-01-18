@@ -1,0 +1,46 @@
+<div *ngIf="headline">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">
+        <img
+          src="assets/blocks.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-left"
+        />
+        Blocks
+      </h5>
+      <h3 class="card-text">{{ headline[0].blocks }}</h3>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">
+        <img
+          src="assets/peers.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-left"
+        />
+        Peers
+      </h5>
+      <h3 class="card-text">{{ headline[1].peers }}</h3>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">
+        <img
+          src="assets/chaincodes.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-left"
+        />
+        Chaincodes
+      </h5>
+      <h3 class="card-text">{{ headline[2].chaincodes }}</h3>
+    </div>
+  </div>
+</div>

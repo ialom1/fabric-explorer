@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  margin-right: 1rem;
+}
+
+.searchBox {
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  margin-top: 1rem;
+}
