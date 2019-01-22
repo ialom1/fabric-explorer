@@ -2,14 +2,14 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4 and NodeJs version 8.9.4.
 
 ## Prerequisites
-1. Set up your Hyperledger Fabric Blockchain
-2. Create a user in your Hyperledger Fabric network
-3. Navigate to backend/Fabric/FabricNetwork.js and update the path to HFC keys, channel name and peer information
-4. Navigate to backend/Fabric/queries.js and update the user_name
+1. Set up your Hyperledger Fabric Blockchain (You may use the sample from the official repository `https://hyperledger-fabric.readthedocs.io/en/release-1.3/install.html` for testing purposes).
+2. Create a user in your Hyperledger Fabric network.
+3. Navigate to backend/Fabric/FabricNetwork.js and update the path to HFC keys and Channel Name.
+4. Navigate to backend/Fabric/queries.js and update the `user_name` variable.
 
 ## Development server
 ### Run the Node REST server
-In the angular project directory run `node server.js`. The server is started at `http://localhost:3000/api/`
+In the root project directory run `node server.js`. The server is started at `http://localhost:3000/api/`
 
 ### Run Fabric-Explorer
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
