@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 In the root project directory run `node server.js`. The server is started at `http://localhost:3000/`. Three api are opened as follows:
 1. `http://localhost:3000/api/blocks`: Fetches three recent blocks.
 2. `http://localhost:3000/api/headline`: Fetches a summary of the current state of the blockchain.
-3. `http://localhost:3000/api/trnxn/:trnxnid`: Fetches the block that contains a particular transaction which is identified the transaction ID(trnxnid).
+3. `http://localhost:3000/api/trnxn/:trnxnid`: Fetches the block that contains a particular transaction which is identified the transaction-id(`trnxnid`).
 
 
 ### Run Fabric-Explorer
