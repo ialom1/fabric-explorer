@@ -1,4 +1,5 @@
 # Fabric-Explorer
+Fabric Explorer is a web-based block-explorer interface for Hyperledger Fabric blocckchains.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4 and NodeJs version 8.9.4.
 
 ## Prerequisites
